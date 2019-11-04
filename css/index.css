@@ -129,7 +129,7 @@ header .logo {
 }
 .banner img {
 	padding-right: 2.3%;
-	
+	width: 40%;
 }
 
 
@@ -215,8 +215,7 @@ footer p {
 }
 
 
-/* SERVICES PAGE */
-/*
+/* * * * * * SERVICES PAGE * * * * * */
 .serv-banner {
 	width: 100%;
 	height: 32.3%;
@@ -228,8 +227,14 @@ footer p {
 }
 
 .serv-banner-bottom h2 {
-	font-size: 150%;
+	font-size: 3rem;
 }
+
+.serv-banner-bottom p {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
 .serv-banner-bottom {
 	padding-top: 4%;
 	font-size: 90%;
@@ -261,9 +266,13 @@ footer p {
 	font-size: 80%;
 }
 
+.serv-main-card h1 {
+	font-size: 1.8rem;
+}
+
 .serv-main-card p {
 	line-height: 150%;
-	font-size: 90%;
+	font-size: 1.3rem;
 	font-weight: bolder;
 }
 .serv-main-card a {
@@ -278,7 +287,7 @@ footer p {
 	color: black;
 	background: white;
 	border-radius: 0.5vh;
-	font-size: 70%;
+	font-size: 1.6rem;
 }
 
 .serv-facts {
@@ -290,7 +299,7 @@ footer p {
 .serv-facts .serv-facts-wordy {
 	display: flex;
 	flex-direction: column;
-	font-size: 90%;
+	font-size: 1.6rem;
 	height: 80%;
 	width: 50%;
 	line-height: 130%;
@@ -304,7 +313,7 @@ footer p {
 	height: 80%;
 	width: auto;
 }  
-*/
+
 
 @media(max-width: 800px) {
 	body {
@@ -368,6 +377,28 @@ footer p {
 		width: 25%;
 		margin-left: 0%;
 	}
+
+	/*Stretch Goal*/
+	.serv-banner-bottom {
+		text-align: center;
+	}
+	
+	.serv-banner-bottom h2 {
+		font-size: 3rem;
+		margin-bottom: 4%;
+	}
+	
+	.serv-banner-bottom p {
+		font-size: 1.4rem;
+		line-height: 2rem;
+	}
+
+	.serv-main-card {
+		background: CADETBLUE;
+		margin: 2%;
+		font-size: 1.6rem;
+	}
+
 }
 
 
@@ -471,4 +502,38 @@ footer p {
 	footer{
 		margin-top: 10%;
 	}
+
+	.serv-main .row{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.serv-main-card h1 {
+		color: DARKSALMON;
+	}
+
+	.serv-main-card a {
+		color: white;
+		background: DARKSLATEBLUE;
+	}
+
+	.serv-facts {
+		flex-direction: column-reverse;
+	}
+
+	.serv-facts .serv-facts-wordy {
+		width: 100%;
+		text-align: center;
+	}
+
+	.serv-facts-list li {
+		list-style: none;
+		border: 1px solid CADETBLUE;
+		width: 50%;
+		margin: 1.5% auto;
+		border-radius: 20px;
+		color: CADETBLUE;
+
+	}
+	
 }
